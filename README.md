@@ -21,6 +21,7 @@ meteor
 ## Author
 
 [Duc Le](https://github.com/ducdev) - *Initial work*
+PRs are welcome !
 
 ## License
 
