@@ -1,6 +1,6 @@
 # Meteor + React + Redux + Server-side Rendering (SSR) + React Router 4
 
-This is a boilerplate/starter kit for approaching quickly and easily on the stack supporting Server-side Rendering (SSR) by default.
+Boilerplate/starter kit for approaching quickly and easily on the stack supporting Server-side Rendering (SSR) by default.
 
 ## Getting Started
 
