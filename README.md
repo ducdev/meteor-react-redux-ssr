@@ -18,6 +18,10 @@ meteor
 * [React.js](https://reactjs.org/) - a JavaScript library for building user interfaces
 * [Redux](https://redux.js.org/) - a predictable state container for JavaScript apps.
 
+## Inspiration
+
+[The Meteor Chef: Server Side Rendering](https://themeteorchef.com/tutorials/server-side-rendering)
+
 ## Author
 
 [Duc Le](https://github.com/ducdev) - *Initial work*
