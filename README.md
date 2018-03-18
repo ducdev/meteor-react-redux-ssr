@@ -4,7 +4,7 @@ This is a boilerplate/starter kit for approaching quickly and easily on the stac
 
 ## Getting Started
 
-Let's assumpt that Meteor.js has been installed on your local machine, if not please refer to https://www.meteor.com/
+Let's assume that Meteor.js has been installed on your local machine, if not please refer to https://www.meteor.com/
 
 ```
 git clone git@github.com:ducdev/meteor-react-redux-ssr.git
