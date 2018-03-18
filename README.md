@@ -1,5 +1,3 @@
-# meteor-react-redux-ssr
-
 # Meteor + React + Redux + Server-side Rendering (SSR)
 
 This is a boilerplate/starter kit for approaching quickly and easily on the stack supporting Server-side Rendering (SSR) by default.
@@ -22,7 +20,7 @@ meteor
 
 ## Author
 
-* **Duc Le** - *Initial work* - [PurpleBooth](https://github.com/ducdev)
+[Duc Le](https://github.com/ducdev) - *Initial work*
 
 ## License
 
