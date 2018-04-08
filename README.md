@@ -31,3 +31,8 @@ PRs are welcome !
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details
+
+## Support on Beerpay
+Hey dude! Help me out for a couple of :beers:!
+
+[![Beerpay](https://beerpay.io/ducdev/meteor-react-redux-ssr/badge.svg?style=beer-square)](https://beerpay.io/ducdev/meteor-react-redux-ssr)  [![Beerpay](https://beerpay.io/ducdev/meteor-react-redux-ssr/make-wish.svg?style=flat-square)](https://beerpay.io/ducdev/meteor-react-redux-ssr?focus=wish)
