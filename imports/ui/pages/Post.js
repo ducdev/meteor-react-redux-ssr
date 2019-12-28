@@ -1,37 +1,36 @@
-import React, { Component } from 'react'
-import { bindActionCreators } from 'redux'
+import React, { useEffect } from 'react'
 import { connect } from 'react-redux'
 import moment from 'moment'
+import { bindActionCreators } from 'redux'
 
 import { fetchPostBySlug } from '../../actions/posts'
 
-class Post extends Component {
-  componentWillMount() {
-    const { fetchPostBySlug } = this.props
-    fetchPostBySlug(this.props.match.params.slug)
-  }
-  render() {
-    const { loading, post } = this.props
-    if (loading || !post)
-      return <div>loading...</div>
-    return (
-      <div>
-        <h3>{post.title}</h3>
-        <img src={post.image} />
-        <h5>{post.description}</h5>
-        <p>Author: {post.author}</p>
-        {
-          post.authorData &&
-          <img src={post.authorData.image} />
-        }
-        <p>Date: {moment(post.createdAt).format('LLL')}</p>
-        <p>Voted: {post.votes}</p>
-      </div>
-    )
-  }
+const Post = ({ loading, post, match, fetchPostBySlug }) => {
+  useEffect(() => {
+    if (loading || !post || match.params.slug !== post.slug) {
+      console.log('called POST')
+      fetchPostBySlug(match.params.slug)
+    }
+  })
+  if (loading || !post)
+    return <div>loading...</div>
+  return (
+    <div>
+      <h3>{post.title}</h3>
+      <img src={post.image} />
+      <h5>{post.description}</h5>
+      <p>Author: {post.author}</p>
+      {
+        post.authorData &&
+        <img src={post.authorData.image} />
+      }
+      <p>Date: {moment(post.createdAt).format('LLL')}</p>
+      <p>Voted: {post.votes}</p>
+    </div>
+  )
 }
 
-function mapStateToProps(state) {
+const mapStateToProps = (state) => {
   const { post, loading } = state.posts
   return {
     post,
@@ -39,10 +38,8 @@ function mapStateToProps(state) {
   }
 }
 
-function mapDispatchToProps(dispatch) {
-  return {
-    fetchPostBySlug: bindActionCreators(fetchPostBySlug, dispatch)
-  }
-}
+const mapDispatchToProps = dispatch => ({
+  fetchPostBySlug: bindActionCreators(fetchPostBySlug, dispatch)
+})
 
 export default connect(mapStateToProps, mapDispatchToProps)(Post)
